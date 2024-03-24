@@ -2,11 +2,12 @@ import Link from "next/link";
 
 const Sidebar = ({ docs }) => {
     const roots = docs.filter((doc) => !doc.parent);
-    console.log({ roots });
+    // console.log({ roots });
+    console.log({roots})
 
     const nonRoots = Object.groupBy(
-        docs.filter((doc) => doc.parent),
-        ({ parent }) => parent
+        docs.filter((doc) => doc.parent),//jader root level e nei ,oder ke group korche jader parent er upor vitti kore children ache
+        ({ parent }) => parent //parent er upor vitti kore 
     );
     console.log({ nonRoots });
 
