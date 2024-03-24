@@ -1,9 +1,10 @@
 import ContentDisplay from '../../../ContentDisplay.jsx';
 
-const SubContentPage = ({params:{contentId}}) => {
+const SubContentPage = ({params:{subContentId}}) => {
     return (
         <div>
-    <ContentDisplay id={contentId}/>
+            {subContentId}
+    <ContentDisplay id={subContentId}/>
         </div>
     );
 };

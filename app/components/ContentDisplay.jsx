@@ -1,12 +1,11 @@
 import { getDocumentContent } from '@/lib/doc';
-import React from 'react';
 
-const ContentDisplay = ({id}) => {
-    const documentation = await getDocumentContent(id)
-    console.log("hlw",documentation)
+const ContentDisplay = async ({id}) => {
+    const documentContent = await getDocumentContent(id)
+    console.log(documentContent)
     return (
         <div>
-            {contentId}
+            doc display
         </div>
     );
 };
