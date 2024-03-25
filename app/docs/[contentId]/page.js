@@ -1,4 +1,4 @@
-import ContentDisplay from '../../ContentDisplay.jsx';
+import ContentDisplay from '@/app/components/ContentDisplay';
 
 const contentPage = ({params:{contentId}}) => {
     return (
